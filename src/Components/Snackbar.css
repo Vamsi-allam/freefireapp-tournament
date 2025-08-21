@@ -1,0 +1,20 @@
+.snackbar {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  z-index: 2000;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  cursor: pointer;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.snackbar-info { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.snackbar-success { background: linear-gradient(135deg, #10b981, #059669); }
+.snackbar-warning { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.snackbar-error { background: linear-gradient(135deg, #ef4444, #dc2626); }

@@ -1,0 +1,101 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--gradient-accent);
+  transition: all 0.3s ease;
+}
+
+.signin-box {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-primary);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem;
+}
+
+.signin-heading {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.signin-sub-heading {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 2px solid var(--border-primary);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.signin-input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  transform: translateY(-1px);
+}
+
+.signin-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.signin-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--gradient-primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.signin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.1);
+}
+
+.signin-register-link {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.signin-register-link:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+.signin-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  margin-bottom: 1rem;
+}

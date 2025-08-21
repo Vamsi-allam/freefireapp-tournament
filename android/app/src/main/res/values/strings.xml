@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prime Arena</string>
+    <string name="title_activity_main">Prime Arena</string>
+    <string name="package_name">live.primearena.app</string>
+    <string name="custom_url_scheme">live.primearena.app</string>
+</resources>
