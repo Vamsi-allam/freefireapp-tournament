@@ -298,9 +298,9 @@ function subscribeTable({ channelName, table, filter, event = '*', schema = 'pub
 		.on('postgres_changes', { event, schema, table, ...(filter ? { filter } : {}) }, callback)
 		.subscribe((status) => {
 			if (status === 'CHANNEL_ERROR') {
-				console.warn(`[realtime:${channelName}] channel error`);
+				//console.warn(`[realtime:${channelName}] channel error`);
 			} else if (status === 'TIMED_OUT') {
-				console.warn(`[realtime:${channelName}] timed out; will retry automatically`);
+				//console.warn(`[realtime:${channelName}] timed out; will retry automatically`);
 			}
 		});
 	return () => { try { supabase.removeChannel(ch); } catch {} };
